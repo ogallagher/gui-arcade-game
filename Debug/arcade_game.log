@@ -1,0 +1,27 @@
+﻿Build started 3/17/2019 11:22:17 PM.
+     1>Project "C:\Users\gallaoj16\Documents\arcade_game\arcade_game.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\arcade_game.cpp
+         arcade_game.cpp
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(49): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(51): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(52): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(154): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(162): warning C4305: '*=' : truncation from 'double' to 'float'
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(203): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(207): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(238): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(243): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(288): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\gallaoj16\Documents\arcade_game\Debug\arcade_game.exe" /INCREMENTAL /NOLOGO glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\gallaoj16\Documents\arcade_game\Debug\arcade_game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\gallaoj16\Documents\arcade_game\Debug\arcade_game.lib" /MACHINE:X86 Debug\arcade_game.obj
+         Debug\bullet.obj
+         Debug\button.obj
+         Debug\enemy.obj
+         Debug\player.obj
+         arcade_game.vcxproj -> C:\Users\gallaoj16\Documents\arcade_game\Debug\arcade_game.exe
+     1>Done Building Project "C:\Users\gallaoj16\Documents\arcade_game\arcade_game.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.74
