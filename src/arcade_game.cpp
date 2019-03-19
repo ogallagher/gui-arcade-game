@@ -9,10 +9,23 @@ This file is the program executable.
 
 */
 
+#if defined(__APPLE__)
+
+#define GL_SILENCE_DEPRECATION
+#include <GLUT/glut.h>
+
+#else
+
 #include <GL/glut.h>
+
+#endif
+
 #include <iostream>
 #include <vector>
 #include <ctime>
+
+#define USE_MATH_DEFINES_
+#include <cmath>
 
 #include "../include/player.h"
 #include "../include/bullet.h"
@@ -175,14 +188,15 @@ void onDisplay() {
 			buttonAgain.display(frustumSize);
 		
 			//print score
-			cout << "Final score: " << player.score << endl << endl;
+			//cout << "Final score: " << player.score << endl << endl;
 			break;
 			
 		default:
 			break; //do nothing
 	}
 
-	glFlush();
+	//glFlush();
+	glutSwapBuffers();
 }
 
 void onReshape(int w, int h) {
@@ -249,6 +263,8 @@ void onHover(int x, int y) {
 	else if (screen == SCREEN_OVER) {
 		buttonAgain.hover(x,y);
 	}
+	
+	glutPostRedisplay();
 }
 
 //handle key presses
@@ -283,7 +299,7 @@ void initGraphics() {
 void initWindow(int argc, char **argv) {
 	//glut window
 	glutInit(&argc,argv);
-	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(windowWidth,windowHeight);
 	glutInitWindowPosition(100.0,100.0);
 	glutCreateWindow("Owen Arcade Game");

@@ -1,4 +1,16 @@
+#if defined(__APPLE__)
+
+#define GL_SILENCE_DEPRECATION
+#include <GLUT/glut.h>
+
+#else
+
 #include <GL/glut.h>
+
+#endif
+
+#define USE_MATH_DEFINES_
+#include <cmath>
 
 #include "../include/bullet.h"
 

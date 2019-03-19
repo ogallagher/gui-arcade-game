@@ -32,7 +32,7 @@ public:
 
 	vector<double> getL() {return l;};
 
-	Enemy(int x, int y, Player *p);
+	Enemy(int x=0, int y=0, Player *p=nullptr);
 	bool move(int frustumSize); //returns false if dead
 	void setV(double x, double y); //given a unit vector
 	void die();

@@ -1,10 +1,6 @@
 #ifndef OMATH_H
 #define OMATH_H
 
-#define _USE_MATH_DEFINES
-
-#include <cmath>
-
 class OMath {
 public:
 	static const double pi;

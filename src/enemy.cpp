@@ -1,11 +1,21 @@
+#if defined(__APPLE__)
+
+#define GL_SILENCE_DEPRECATION
+#include <GLUT/glut.h>
+
+#else
+
 #include <GL/glut.h>
+
+#endif
+
 #include <iostream>
 
 #include "../include/enemy.h"
 
 int Enemy::size = 20;
 
-Enemy::Enemy(int x=0, int y=0, Player *p=nullptr) {
+Enemy::Enemy(int x, int y, Player *p) {
 	l.assign(2,0);
 	v.assign(2,0);
 	speed = 0.03;
@@ -41,6 +51,8 @@ bool Enemy::move(int frustumSize) {
 			l[1] = 0;
 		}
 	}
+	
+	return true;
 }
 
 void Enemy::setV(double ux, double uy) {
