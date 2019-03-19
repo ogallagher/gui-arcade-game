@@ -171,7 +171,7 @@ void Player::display(int frustumSize) {
 
 void Player::reset(int frustumSize) {
 	l[0] = frustumSize/2;
-	l[1] = frustumSize/2;
+	l[1] = size * 5;
 
 	v.assign(2,0);
 	a.assign(2,0);

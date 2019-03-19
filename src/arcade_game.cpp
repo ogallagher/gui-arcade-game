@@ -129,7 +129,6 @@ void onDisplay() {
 					collided = true;
 
 					screen = SCREEN_OVER;
-					cout << "Final score: " << player.score << endl << endl;
 				}
 			}
 
@@ -158,12 +157,15 @@ void onDisplay() {
 
 				timer = 0;
 				
-				if (pause > 0.5) {
-					pause *= 0.9;
+				if (pause > 0.1) {
+					pause *= 0.8;
 				}
 			}
 	
 			//print score
+
+			//refresh
+			glutPostRedisplay();
 			break;
 		
 		case SCREEN_OVER:
@@ -173,7 +175,7 @@ void onDisplay() {
 			buttonAgain.display(frustumSize);
 		
 			//print score
-			
+			cout << "Final score: " << player.score << endl << endl;
 			break;
 			
 		default:
@@ -181,8 +183,6 @@ void onDisplay() {
 	}
 
 	glFlush();
-
-	glutPostRedisplay();
 }
 
 void onReshape(int w, int h) {

@@ -1,4 +1,4 @@
-﻿Build started 3/17/2019 11:22:17 PM.
+﻿Build started 3/19/2019 12:02:16 AM.
      1>Project "C:\Users\gallaoj16\Documents\arcade_game\arcade_game.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\arcade_game.cpp
@@ -6,8 +6,8 @@
      1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(49): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
      1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(51): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
      1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(52): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(154): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(162): warning C4305: '*=' : truncation from 'double' to 'float'
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(153): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(161): warning C4305: '*=' : truncation from 'double' to 'float'
      1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(203): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(207): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\gallaoj16\documents\arcade_game\src\arcade_game.cpp(238): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
@@ -24,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.74
+Time Elapsed 00:00:01.54
