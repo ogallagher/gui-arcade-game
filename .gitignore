@@ -1,2 +1,12 @@
 Debug/*
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
+*.tlog
+*.obj
+*.pdb
+*.idb
+*.log
+*.ilk
 
